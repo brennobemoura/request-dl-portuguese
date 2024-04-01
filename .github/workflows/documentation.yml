@@ -48,7 +48,7 @@ jobs:
         run: sudo Xcode-select -switch /Applications/Xcode_15.0.app
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4.0.0
+        uses: actions/configure-pages@v5.0.0
 
       - name: 🛠️ Build DocC
         run: |
