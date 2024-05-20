@@ -20,10 +20,10 @@ jobs:
     runs-on: macOS-13
     steps:
       - name: ⬇️ Get Sources
-        uses: actions/checkout@v4.0.0
+        uses: actions/checkout@v4.1.6
 
       - name: ⬇️ Get Sources (RequestDL)
-        uses: actions/checkout@v4.0.0
+        uses: actions/checkout@v4.1.6
         with:
           repository: request-dl/request-dl
           ref: ${{ (github.event.inputs.TAG_NAME || github.event.release.tag_name) || 'main' }}
